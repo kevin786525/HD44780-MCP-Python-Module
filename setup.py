@@ -8,5 +8,6 @@ setup(
     description="In order to adapt to the Raspberry Pi used mcp23008 connected to the 1602lcd program, because the Adafruit_CharLCD class abandoned the Adafruit_CharLCDBackpack method!",
     url="https://github.com/kevin786525/HD44780-MCP-Python-Module.git",
     packages=find_packages(),
+    py_modules=['HD44780MCP', 'MCP230XX'],
     install_requires=[""],
 )
