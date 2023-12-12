@@ -84,3 +84,14 @@ This module works with the Adafruit i2c LCD backpack (which are pretty nice). Th
 is controlled using GP7 of the onboard MCP23008. The example file shows how to turn it on and off.
 
 The HD44780 and MCP23008/17 data sheets are useful and can be downloaded from the Adafruit website and elsewhere.
+
+
+Installation:
+use command: 
+"python setup.py install"
+to install the library for the regular users
+
+&
+"sudo python setup.py install"
+to install the library for the super users
+(Because super users have the different environment than regular users)
