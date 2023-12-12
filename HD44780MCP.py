@@ -170,8 +170,15 @@ class HD44780:
         return
 
     def display_string(self, msg):
-
+        line_cnt = 1
         for letter in msg:
+            if letter == '\n':
+                line_cnt += 1
+                # print('new line == ', line_cnt)
+                if line_cnt > 2:
+                    line_cnt = 0
+                self.set_cursor(line_cnt, 0)
+                continue
             self.display_character(letter)
 
         return
